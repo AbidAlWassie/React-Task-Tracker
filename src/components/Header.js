@@ -8,7 +8,7 @@ const Header = ({title}) => {
   
   return (
     <header className="header">
-      <h1 style={headingStyle}>{title}</h1>
+      <h1>{title}</h1>
       <Button color="black" text="Add" onClick={btnClick}/>
     </header>
   )
@@ -22,8 +22,8 @@ Header.propTypes = {
   title: PropTypes.string.isRequired,
 }
 
-const headingStyle = {
-  color: "red", backgroundColor: "black"
-}
+// const headingStyle = {
+//   color: "red", backgroundColor: "black"
+// }
 
 export default Header
