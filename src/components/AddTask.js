@@ -20,3 +20,5 @@ const AddTask = () => {
     </form>
   )
 }
+
+export default AddTask
