@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Header from './components/Header';
+import Header from "./components/Header";
 import Tasks from "./components/Tasks";
 import AddTask from "./components/AddTask";
 
@@ -29,13 +29,13 @@ const App = () => {
   
   // Delete a Task
   const deleteTask = (id) => {
-    setTasks(tasks.filter((task) => task.id !== id))
+    setTasks(tasks.filter((task) => task.id !== id));
   }
   
   // Toggle Reminder
   const toggleReminder = (id) => {
     setTasks(
-      tasks.map((task) => task.id === id ? { ...task, reminder: !task.reminder } : task))
+      tasks.map((task) => task.id === id ? { ...task, reminder: !task.reminder } : task));
   }
   
   return (

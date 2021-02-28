@@ -1,4 +1,4 @@
-import {useState} from "React"
+import {useState} from "React";
 
 const AddTask = () => {
   const [text, setText] = useState("");
@@ -9,22 +9,22 @@ const AddTask = () => {
     <form className="add-form" action="">
       <div className="form-control">
         <label>Task</label>
-        <input type="text" placeholder="Add Task" value={text} onChange={(e) => setText(e.target.value)} />
+        <input type="text" placeholder="Add Task" value={text} onChange={(e) => {setText(e.target.value)}} />
       </div>
    
       <div className="form-control">
         <label>Day & Time</label>
-        <input type="text" placeholder="Add Day & Time" value={day} onChange={(e) => setDay(e.target.value)} />
+        <input type="text" placeholder="Add Day & Time" value={day} onChange={(e) => {setDay(e.target.value)}} />
       </div>
   
-      <div className="form-control">
+      <div className="form-control form-control-check">
         <label>Set Reminder</label>
-        <input type="checkbox" value={reminder} onChange={(e) => setReminder(e.currentTarget.checked)} />
+        <input type="checkbox" value={reminder} onChange={(e) => {setReminder(e.currentTarget.checked)}} />
       </div>
   
-      <input type="submit" value="Save Task"/>
+      <input type="submit" value="Save Task" className="btn btn-block"/>
     </form>
   )
 }
 
-export default AddTask
+export default AddTask;
