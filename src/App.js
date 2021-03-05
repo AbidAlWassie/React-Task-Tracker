@@ -28,8 +28,8 @@ const App = () => {
   )
   
   // Add Task
-  const addTask = () => {
-    console.log(tasks);
+  const addTask = (task) => {
+    console.log(task);
   }
   
   // Delete a Task
