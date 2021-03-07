@@ -49,7 +49,7 @@ const App = () => {
   return (
     <div className="container">
       <Header
-        onAdd={() => setShowAddTask(!showAddTask)}
+        onAdd={() => {setShowAddTask(!showAddTask)}}
         showAdd={showAddTask}
         />
       {showAddTask && <AddTask onAdd={addTask}/>}
