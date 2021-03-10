@@ -1,7 +1,7 @@
 import Task from "./Task";
 const Tasks = ({tasks, onDelete, onToggle}) => {
   return (
-    <>
+    <div>
       {tasks.map((task) => (
         <Task
           key={task.id}
@@ -9,7 +9,7 @@ const Tasks = ({tasks, onDelete, onToggle}) => {
           onDelete={onDelete}
           onToggle={onToggle}  />
       ))}
-    </>
+    </div>
   )
 }
 
